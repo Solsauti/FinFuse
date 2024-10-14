@@ -1,0 +1,328 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  
+  /* Navbar */
+  .navbar {
+    padding: 1rem 0;
+    background-color: #004d40;
+  }
+  
+  .navbar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  .navbar .navbar-nav .nav-link {
+    color: #ddd;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .navbar-nav .nav-link:hover {
+    color: #fff;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background-color: #004d40; /* Jungle Green */
+    color: white;
+    padding: 4rem 0;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-section p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-section .btn-primary {
+    background-color: #26a69a; /* Light Jungle Green */
+    border-color: #26a69a;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-section .btn-primary:hover {
+    background-color: #1e8c78; /* Darker Jungle Green */
+  }
+  
+  .hero-section img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* The FinFuse Story Section */
+  .fuse-story-section {
+    background-color: #fff;
+    text-align: center;
+    padding: 4rem 0;
+  }
+  
+  .fuse-story-section h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .fuse-story-section p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .fuse-story-section .btn-secondary {
+    background-color: #004d40; /* Jungle Green */
+    border-color: #004d40;
+    color: white;
+  }
+  
+  .fuse-story-section .btn-secondary:hover {
+    background-color: #003831; /* Darker Jungle Green */
+  }
+  
+  /* Stats Section */
+  .stats-section {
+    background-color: #f9f9f9;
+    padding: 4rem 0;
+  }
+  
+  .stat-card {
+    background-color: #fff;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .stat-card h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .stat-card p {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  /* Partners Section */
+  .partners-section {
+    padding: 4rem 0;
+    background-color: #fff;
+  }
+  
+  .chip {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+    color: #333;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+  
+  .chip i {
+    margin-right: 10px;
+  }
+  
+  .chip:hover {
+    background-color: #004d40; /* Jungle Green */
+    color: white;
+  }
+  
+  /* Empowering Financial Future Section */
+  .empower-section {
+    background-color: #fff;
+  }
+  
+  .empower-section img {
+    border-radius: 10px;
+  }
+  
+  .empower-section h3 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  /* How It Works Section */
+  .how-it-works-section {
+    background-color: #f4f4f4;
+    padding: 4rem 0;
+  }
+  
+  .play-btn {
+    background: none;
+    color: #004d40; /* Jungle Green */
+    border: none;
+  }
+  
+  .play-btn i {
+    transition: color 0.3s ease;
+  }
+  
+  .play-btn:hover i {
+    color: #1e8c78; /* Darker Jungle Green */
+  }
+  
+  /* Testimonials Section */
+  .testimonials-section {
+    background-color: #f9f9f9;
+    padding: 4rem 0;
+  }
+  
+  .testimonial {
+    background-color: #fff;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonial:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .testimonial-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+  
+  .testimonial h5 {
+    margin-top: 1rem;
+    font-weight: 600;
+  }
+  
+  /* FAQ Section */
+  .faq-section {
+    padding: 4rem 0;
+  }
+  
+  .accordion-button {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color: #004d40; /* Jungle Green */
+    color: white;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 0;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  /* Scroll Reveal Animation */
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  .scrolled {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Stats Section */
+.stats-section {
+    background-color: #f9f9f9;
+    padding: 4rem 0;
+  }
+  
+  .stat-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .stat-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #004d40; /* Jungle Green */
+  }
+  
+  .stat-label {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 1rem;
+  }
+  
+  .stat-description {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .btn-primary {
+    background-color: #004d40; /* Jungle Green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #1e8c78; /* Darker Jungle Green */
+  }
+  
+  .btn-secondary {
+    background-color: #26a69a; /* Lighter Jungle Green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #1e8c78; /* Darker Jungle Green */
+  }
+  
+  /* Highlighted Stat Card */
+  .stat-card.highlighted {
+    background-color: #004d40; /* Jungle Green */
+    color: white;
+  }
+  
+  .stat-card.highlighted .stat-value {
+    color: #fff;
+  }
+  
+  .stat-card.highlighted .stat-description {
+    color: #ddd;
+  }
+  
+  .stat-card.highlighted .btn-secondary {
+    background-color: #fff;
+    color: #004d40;
+  }
+  
+  .stat-card.highlighted .btn-secondary:hover {
+    background-color: #f1f1f1;
+  }
+  
