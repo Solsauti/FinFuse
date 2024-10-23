@@ -181,53 +181,54 @@
       </div>
     </div>
   </section>
-
-<!-- How It Works Section -->
-<section class="how-it-works-section py-5">
-  <div class="container">
   
-    <!-- First Row: Title on Left, Paragraph on Right -->
-    <div class="row align-items-center mb-5">
-      <div class="col-md-6">
-        <h3>How FinFuse Works To Serve You Better</h3>
-      </div>
-      <div class="col-md-6">
-        <p>Discover how we provide financial security and grow your wealth through innovative strategies and personalized support.</p>
-      </div>
-    </div>
-
-    <!-- Second Row: Image (30%) and Full-Height Video (70%) -->
-    <div class="row align-items-center" style="height: 400px;"> <!-- Defined consistent height for the row -->
-      <!-- Image: Takes 30% of the row width -->
-      <div class="col-md-4" style="flex: 0 0 30%; height: 100%;">
-        <div class="h-100">
-          <img src="img/team.jpg" class="img-fluid rounded h-100 w-100" alt="How It Works Image" 
-               style="object-fit: cover; object-position: center;">
+  <!-- How It Works Section -->
+  <section class="how-it-works-section py-5">
+    <div class="container">
+    
+      <!-- First Row: Title on Left, Paragraph on Right -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+          <h3>How FinFuse Works To Serve You Better</h3>
+        </div>
+        <div class="col-md-6">
+          <p>Discover how we provide financial security and grow your wealth through innovative strategies and personalized support.</p>
         </div>
       </div>
-
-      <!-- Video: Takes 70% of the row width -->
-      <div class="col-md-8 position-relative" style="flex: 0 0 70%; height: 100%;">
-        <!-- Full-Height Video with Rounded Corners -->
-        <div class="h-100">
-          <video id="howItWorksVideo" class="img-fluid rounded h-100 w-100" style="object-fit: cover;" muted>
-            <source src="video/what-is-finance.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+  
+      <!-- Second Row: Responsive Image and Full-Height Video -->
+      <div class="row align-items-center">
+        
+        <!-- Image: Takes 100% width on small screens, 30% on larger -->
+        <div class="col-12 col-md-4 mb-3 mb-md-0"> <!-- Responsive columns -->
+          <div class="h-100">
+            <img src="img/team.jpg" class="img-fluid rounded w-100" alt="How It Works Image" 
+                 style="object-fit: cover; object-position: center;">
+          </div>
         </div>
-
-        <!-- Play/Pause Button Positioned at Bottom Right -->
-        <a href="#" class="btn btn-secondary play-btn position-absolute rounded-circle" 
-           style="bottom: 20px; right: 20px; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;"
-           onclick="togglePlayPause(event)">
-          <i id="playIcon" class="fas fa-play-circle fa-2x"></i>
-        </a>
+  
+        <!-- Video: Takes 100% width on small screens, 70% on larger -->
+        <div class="col-12 col-md-8 position-relative"> <!-- Responsive columns -->
+          <!-- Full-Height Video with Rounded Corners -->
+          <div class="h-100">
+            <video id="howItWorksVideo" class="img-fluid rounded w-100" style="object-fit: cover;" muted>
+              <source src="video/what-is-finance.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+  
+          <!-- Play/Pause Button Positioned at Bottom Right -->
+          <a href="#" class="btn btn-secondary play-btn position-absolute rounded-circle" 
+             style="bottom: 20px; right: 20px; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;"
+             onclick="togglePlayPause(event)">
+            <i id="playIcon" class="fas fa-play-circle fa-2x"></i>
+          </a>
+        </div>
       </div>
+  
     </div>
-
-  </div>
-</section>
- 
+  </section>
+  
 <!-- Testimonials Section -->
 <section class="testimonials-section py-5 bg-light">
     <div class="container">
