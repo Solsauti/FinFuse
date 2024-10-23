@@ -210,26 +210,24 @@
       <div class="col-md-8 position-relative" style="flex: 0 0 70%; height: 100%;">
         <!-- Full-Height Video with Rounded Corners -->
         <div class="h-100">
-          <video class="img-fluid rounded h-100 w-100" controls style="object-fit: cover;">
+          <video id="howItWorksVideo" class="img-fluid rounded h-100 w-100" style="object-fit: cover;" muted>
             <source src="video/what-is-finance.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
 
-        <!-- Play Button Positioned at Bottom Right -->
+        <!-- Play/Pause Button Positioned at Bottom Right -->
         <a href="#" class="btn btn-secondary play-btn position-absolute rounded-circle" 
-           style="bottom: 20px; right: 20px; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
-          <i class="fas fa-play-circle fa-2x"></i>
+           style="bottom: 20px; right: 20px; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;"
+           onclick="togglePlayPause(event)">
+          <i id="playIcon" class="fas fa-play-circle fa-2x"></i>
         </a>
       </div>
     </div>
 
   </div>
 </section>
-
-  
-  
-  
+ 
 <!-- Testimonials Section -->
 <section class="testimonials-section py-5 bg-light">
     <div class="container">
@@ -384,6 +382,24 @@
         handleScrollAnimation();
       });
     });
+
+    function togglePlayPause(event) {
+      event.preventDefault();
+      const video = document.getElementById('howItWorksVideo');
+      const playIcon = document.getElementById('playIcon');
+
+      if (video.paused) {
+        // If video is paused, play the video and change icon to pause
+        video.play();
+        playIcon.classList.remove('fa-play-circle');
+        playIcon.classList.add('fa-pause-circle');
+      } else {
+        // If video is playing, pause the video and change icon back to play
+        video.pause();
+        playIcon.classList.remove('fa-pause-circle');
+        playIcon.classList.add('fa-play-circle');
+      }
+    }
   </script>
 </body>
 
